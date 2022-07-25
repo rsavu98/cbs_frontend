@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram</title>
+</head>
+<body>
+    <script>
+        let word1 = prompt("Enter the first word: ");
+        let word2 = prompt("Enter the second word: ");
+
+        function isAnagram(word1, word2) {
+            let result = word1.split("").sort().toString() == word2.split("").sort().toString();
+            result ? alert(`${word1} and ${word2} are anagrams`) : alert(`${word1} and ${word2} are not anagrams!`)
+        }
+
+        isAnagram(word1, word2);
+    </script>
+</body>
+</html>

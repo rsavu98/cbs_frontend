@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        function isPalindrome() {
+            do {
+            let word = prompt('Enter a word: ');
+            if (word.length < 2) {
+                continue;
+            }
+            else {
+                let result = word == word.split("").reverse().join("")
+                result ? alert(`The word ${word} is palindrome`) : alert(`The word ${word} is not palindrome`)
+                }
+            }
+            while (true)
+        }
+        
+        isPalindrome();
+    </script>
+</body>
+</html>
